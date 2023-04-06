@@ -66,79 +66,91 @@ public class Geometria {
 	public int areatrapecio(int B, int b, int h) {
 		return ((B + b) / 2) * h;
 	}
-	
-	//Selector de figuras
-		public String figura(int fiCode) {
-			
-			String Figura="";
-			
-			switch (fiCode) 
-			{
-			case 1: Figura= "cuadrado";
-				break;
-			case 2: Figura= "Circulo";
-				break;
-			case 3: Figura= "Triangulo";
-				break;
-			case 4: Figura= "Rectangulo";
-				break;
-			case 5: Figura= "Pentagono";
-				break;
-			case 6: Figura= "Rombo";
-				break;
-			case 7: Figura= "Romboide";
-				break;
-			case 8: Figura= "Trapecio";
-				break;
-			default:
-				Figura= "Default";
-				break;
-			}
-			return Figura;
-			
+
+	// Selector de figuras
+	public String figura(int fiCode) {
+
+		String Figura = "";
+
+		switch (fiCode) {
+		case 1:
+			Figura = "cuadrado";
+			break;
+		case 2:
+			Figura = "Circulo";
+			break;
+		case 3:
+			Figura = "Triangulo";
+			break;
+		case 4:
+			Figura = "Rectangulo";
+			break;
+		case 5:
+			Figura = "Pentagono";
+			break;
+		case 6:
+			Figura = "Rombo";
+			break;
+		case 7:
+			Figura = "Romboide";
+			break;
+		case 8:
+			Figura = "Trapecio";
+			break;
+		default:
+			Figura = "Default";
+			break;
 		}
-		
-		//Getters y Setters
-		/**
-		 * @return the id
-		 */
-		public int getId() {
-			return id;
-		}
-		/**
-		 * @param id the id to set
-		 */
-		public void setId(int id) {
-			this.id = id;
-		}
-		/**
-		 * @return the nom
-		 */
-		public String getNom() {
-			return nom;
-		}
-		/**
-		 * @param nom the nom to set
-		 */
-		public void setNom(String nom) {
-			this.nom = nom;
-		}
-		
-		/**
-		 * @return the area
-		 */
-		public double getArea() {
-			return area;
-		}
-		/**
-		 * @param area the area to set
-		 */
-		public void setArea(double area) {
-			this.area = area;
-		}
-		@Override
-		public String toString() {
-			return "Geometria [id=" + id + ", nom=" + nom + ", area=" + area + "]";
-		}
+		return Figura;
+
+	}
+
+	// Getters y Setters
+	/**
+	 * @return the id
+	 */
+	public int getId() {
+		return id;
+	}
+
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	/**
+	 * @return the nom
+	 */
+	public String getNom() {
+		return nom;
+	}
+
+	/**
+	 * @param nom the nom to set
+	 */
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	/**
+	 * @return the area
+	 */
+	public double getArea() {
+		return area;
+	}
+
+	/**
+	 * @param area the area to set
+	 */
+	public void setArea(double area) {
+		this.area = area;
+	}
+
+	@Override
+	public String toString() {
+		return "Geometria [id=" + id + ", nom=" + nom + ", area=" + area + "]";
+	}
 
 }
