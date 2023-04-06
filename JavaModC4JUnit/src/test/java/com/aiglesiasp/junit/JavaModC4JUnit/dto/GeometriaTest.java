@@ -44,7 +44,7 @@ public class GeometriaTest {
 		assertEquals(area, 22.55, 0.00001);
 	}
 
-	//TEST AREAS
+	// TEST AREAS
 	@Test
 	public void testAreaCuadrado() {
 		int lado = 2;
@@ -116,7 +116,6 @@ public class GeometriaTest {
 		assertEquals(esperado, resultado);
 	}
 
-	
 	// COMPROBAR CONSTRUCTOR
 	private static Stream<Arguments> getTypeGeo() {
 		return Stream.of(Arguments.of(1, "cuadrado"), Arguments.of(2, "Circulo"), Arguments.of(3, "Triangulo"),
@@ -134,7 +133,7 @@ public class GeometriaTest {
 		assertEquals(resultado, esperado);
 	}
 
-	//TEST TO STRING
+	// TEST TO STRING
 	@Test
 	public void testToString() {
 		geo.setId(1);
